@@ -1,4 +1,8 @@
+body {
+    min-width: 1280px;
+}
 header {
+    position: relative;
     height: 81px;
     text-align: center;
 }
@@ -30,9 +34,7 @@ header .Inb li a:hover {
     color: #2d5b79;
     font-weight: bold;
 }
-header .Inb li a span {
-    position: relative;
-}
+header .Inb li a span {position: relative;}
 header .Inb li a:hover span::after {
     position: absolute;
     left: 0;
@@ -71,3 +73,89 @@ header .spot a {
     line-height: 81px;
 }
 header .spot li:last-child a {padding-right: 0;}
+
+.visual {
+    position: relative;
+    padding:  0 50px;
+}
+.visual .prev, .visual .next {
+    display: block;
+    position: absolute;
+    top: 50%;
+    width: 25px;
+    height: 47px;
+    transform: translateY(-50%);
+    color: transparent; /*글자 컬러 투명*/
+    background: url(../images/sp_com.png) no-repeat;
+}
+.visual .prev {
+    left: 82px;
+    background-position: -128px -60px;
+}
+.visual .next {
+    right: 82px;
+    background-position: -158px -60px;
+}
+.visual .control {
+    position: absolute; /*absolute하면 가로 사이즈 초기화*/
+    left: 0;
+    bottom: 55px;
+    width: 100%;
+    text-align: center;
+}
+.visual .control > div {
+    display: inline-block;
+    position: relative;
+    padding: 0 45px 0 0;
+}
+.visual .control > div > div {
+    position: absolute;
+    right: 0;
+}
+.visual .control > div > div a {
+    overflow: hidden;
+    display: inline-block;
+    margin: 0 0 0;
+    width: 8px;
+    height: 9px;
+    background: url(../images/sp_com.png) no-repeat;
+    opacity: 0.5;
+}
+.visual .control > div > div a.play {background-position: -108px -72px;}
+.visual .control > div > div a.pause {background-position: -108px -60px;}
+.visual .control ul {
+    display: inline-block;
+    position: relative;
+    top: 7px;
+    font-size: 0;
+}
+.visual .control li {
+    display: inline-block;
+    padding: 0 3px;
+}
+.visual .control li.on a {background: #fff;}
+.visual .control li a {
+    display: block;
+    width: 50px;
+    height: 3px;
+    background: rgba(255, 255, 255, 0.5);
+    border: none;
+}
+.visual .control a {color: transparent;}
+.visual .con > div {height: 640px;}
+.visual .con .slide {
+    background: url(../images/bg_main01.jpg) no-repeat center;
+    color: #fff;
+    font-size: 32px;
+    line-height: 46px;
+}
+.visual .con .slide p {
+    padding: 19px 0 0;
+    font-size: 20px;
+    line-height: 100%;
+}
+.visual .con .slide .txt {
+    position: absolute;
+    left: 50%;
+    top: 175px;
+}
