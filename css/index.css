@@ -340,6 +340,101 @@ header .spot li:last-child a {padding-right: 0;}
 .magazine.slide .next { right: 50%; margin: 26px -640px 0 0; }
 
 
+
+/*  컨텐츠 영역 - 배너 영역  */
+
+.notice {padding: 0 0 100px;}
+.notice > div {
+    width: 1180px;
+    margin: 0 auto;
+    padding: 55px 0;
+}
+.notice > div .top > ul { float: left;}
+.notice > div .top > ul a {
+    display: block;
+    padding: 100px 0 0;
+    width: 280px;
+    height: 280px;
+    box-sizing: border-box;
+    text-align: center;
+    font-size: 17px;
+    color: #fff;
+    font-weight: bold;
+    transition: all 0.5s;
+}
+.notice > div .top > ul a span { 
+    display: block;
+    position: relative;
+    top: 10px;
+    opacity: 0;
+    padding: 20px 0 0;
+    font-weight: normal;
+    font-size: 14px;
+    transition: all 0.5s;
+}
+.notice > div .top > ul a:hover {
+    background: rgba(45, 91, 121, 0.5);
+}
+.notice > div .top > ul a:hover span {
+    top: 0;
+    opacity: 1;
+}
+.notice > div .top > ul li {
+    float: left;
+    padding: 0 20px 0 0; 
+}
+.notice > div .top > ul li:nth-child(1) {
+    background: url(../images/bg_key_link01.jpg) no-repeat;
+}
+.notice > div .top > ul li:nth-child(2) {
+    color: #000;
+    background: url(../images/bg_key_link02.jpg) no-repeat;
+}
+.notice > div .top > ul li:nth-child(2) a { color: #000;}
+.notice > div .top > ul li:nth-child(3) {
+    background: url(../images/bg_key_link03.jpg) no-repeat;
+}
+.notice > div .top > div { 
+    float: left;
+    padding: 36px 20px 0;
+    width: 280px;
+    height: 280px;
+    background: #f2f0ed;
+    box-sizing: border-box;
+}
+.notice > div .top > div h2 {
+    padding: 0 0 29px;
+    font-size: 17px;
+    color: #000;
+    text-align: center;
+    line-height: 100%;
+}
+.notice > div .top > div div {
+    padding: 0 0 10px;
+}
+.notice > div .top > div select, .notice > div .top > div input {
+    width: 100%;
+    height: 45px;
+    border: none;
+    text-indent: 20px;
+}
+.notice > div .top > div input::-webkit-input-placeholder {
+    color: #949394;
+    font-size: 14px;
+}
+.notice > div .top > div a {
+    display: block;
+    margin: 20px 0 0;
+    height: 45px;
+    line-height: 45px;
+    text-align: center;
+    color: #fff;
+    background: #2d5b79;
+    font-size: 15px;
+}
+
+
+
 /* ----- slide ----- */
 
 .slide .prev, .slide .next {
